@@ -1,0 +1,107 @@
+.inputDate{
+    width:300px;
+}
+.CalendarDay__selected_span {
+    background: #82e0aa;
+    color: white; 
+    border: 1px solid light-red;
+  }
+   
+  .CalendarDay__selected {
+    background: dark-red;
+    color: white;
+  }
+   
+  .CalendarDay__selected:hover {
+    background: orange;
+    color: white;
+  }
+   
+  .CalendarDay__hovered_span:hover,
+  .CalendarDay__hovered_span {
+    background: brown;
+  }
+
+  .reportBox{
+    width:500px;
+    min-height: 505px;
+    height:auto;
+    max-height:1000px;
+    z-index: 15;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(black, .1);
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 100px auto 10px;
+    overflow: hidden;
+    justify-content: 'center';
+    align-items: 'center';
+}
+
+.selectButoons{
+  outline: none;
+  background: accent;
+  width: auto;
+  border: 0;
+  border-radius: 6px;
+  padding: 7px 9px;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: "semibold";
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom:-10px;
+  margin-top: 50px;
+  background-color:#1d8bfae0;
+  margin:auto;
+  margin-left:5px;
+  margin-right: 5px;
+}
+
+.regulationForReport{
+  margin-top: 5%;
+  
+}
+
+.backToHomeErrorPage{
+  outline: none;
+  background: accent;
+  width: auto;
+  border: 0;
+  border-radius: 6px;
+  padding: 7px 9px;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: "semibold";
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom:-10px;
+  margin-top: 50px;
+  background-color:#636363e0;
+  margin:auto;
+  margin-left:5px;
+  margin-right: 5px;
+}
+
+.topLogoRep{
+  width:180px;
+  margin-bottom:15px;
+}
+
+.topLogoError{
+  width:180px;
+  margin-bottom:50px;
+  margin-top:30px;
+}
+
+.topLogoNoAccess{
+  width:180px;
+  margin-bottom:10px;
+  margin-top:35px;
+}
