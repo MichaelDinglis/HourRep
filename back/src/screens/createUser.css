@@ -1,0 +1,72 @@
+.mainDiv{
+    height: 100vh
+}
+
+.centerDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createButton{
+    background-color: white;
+    border-radius: 15px;
+    width:120px;
+    margin-top:20px;
+    margin-bottom: 50px;
+    height:35px;
+    max-height:auto;
+}
+
+.loginButtText{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.backButton{
+    width:50px;
+    height:40px;
+    font-weight: 100;
+    position:absolute;
+    top:25px;
+    left:5px;
+}
+
+.createUserBox{
+    width:500px;
+    height:auto;
+    max-height:1000px;
+    z-index: 15;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(black, .1);
+    box-sizing: border-box;
+    margin: 100px auto 10px;
+    overflow: hidden;
+    justify-content: 'center';
+    align-items: 'center';
+    padding: 12px 20px;
+
+}
+
+.roleSelectionClass{
+    width:70%;
+}
+.roleSelectionPosition{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.topLogoCreateUser{
+    width:180px;
+    margin-top:20px
+  }
+  
