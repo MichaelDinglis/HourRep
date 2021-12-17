@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            left:17px;
+        }
+        .bottomSign{
+            display: block;
+            page-break-inside: avoid;
+            white-space: normal;
+            height: fit-content;
+        }
+        .employerSign{
+            left:10px;
+            float: left;
+        }
+        .bottomSign p{
+            width:320px;
+            flex-direction: row;
+        }
+        .employeeSign{
+            float: right;
+            right:10px;  
+        }
+        table{
+            page-break-inside:auto;
+            overflow: hidden;
+            width:100%;
+            table-Layout:fixed;
+            margin-bottom: 50px;
+        }
+        td{
+            page-break-inside:avoid;
+            page-break-after:auto;
+        }
+        tr{
+            page-break-inside:avoid;
+            page-break-after:auto;
+        }
+        .commentClass{
+            white-space:pre-wrap; 
+            word-wrap:break-word;
+            max-width: fit-content;
+        }
+        table, th, td {
+            word-wrap: break-all;
+            border:1.5px solid black;
+            border-collapse: collapse;
+            font-size:13px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div>
+        <p>
+            Detailed report for: Cactus Hotel for selected Dates:<br><br>
+            {{#each dates}}
+            Start Date:{{this.startDate}}
+            End Date: {{this.endDate}}
+            {{/each}}
+        </p>
+        <hr>
+    </div>
+    {{#each users}}
+    <div style="page-break-before: always;"></div>
+    <div style="display: flex;">
+        <div class="html">
+            <table>
+                <tr>
+                    <th width="110">
+                        Username
+                    </th>
+                    <th width="150">
+                        CheckIn
+                    </th>
+                    <th width="150">
+                        CheckOut
+                    </th>
+                    <th width="60">
+                        Hours Worked
+                    </th>
+                    <th>
+                        Comments
+                    </th>
+                </tr>
+                    {{#each this.data}}
+                    <tr>
+                        <td width="110">{{this.username}}</td>
+                        <td>{{this.checkIn}}</td>
+                        <td>{{this.checkOut}}</td>
+                        <td width="40">{{hourStringForReport}}</td>
+
+                        <td class="commentClass"><p style="page-break-inside: avoid;display: block;">{{this.comments}}</p></td>
+                    </tr>
+                    {{/each}}
+                </table>
+                    <p>
+                        Total Hours Worked for username: "{{this.username}}" :{{this.totalHours}}
+                    </p>
+                </div>
+
+                <hr>                    
+
+                <div class="bottomSign">
+                            <span style="position:relative">
+                                <img style="width:100px"src="https://raw.githubusercontent.com/MichaelDinglis/toDo/main/cactus.jpeg"/>
+                            </span>
+                            <p class="employerSign">
+                                Employer Signiture
+                                <span>----------------------------</span>
+                            </p>
+                            <p class="employeeSign">
+                                Employee Signiture
+                                <span>----------------------------</span>
+                            </p>
+                </div>
+               
+
+        {{/each}}
+    </div>
+  </body>
+</html>
