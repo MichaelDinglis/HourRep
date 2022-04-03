@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route,Redirect} from 'react-router-dom'
 import { useHistory } from "react-router-dom";
-import NoAccess from '../screens/noAccess';
+import NoAccess from '../screens/error_noAccess/noAccess';
 
 export default function ProtectedRoute({isLogged:isLogged,component:Component,isRestricted:isRestricted,acceptedRoles:acceptedRoles, ...rest}) {
     const history=useHistory()

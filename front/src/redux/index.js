@@ -18,7 +18,8 @@ function removeUser(){
     }
 }
 const initialState={
-    user: [{id: 20, username: "md", password: 4, role: "supervisor", firstname: "Michael Dinglis"}]
+    user:[{id: 20, username: "md", password: 4, role: "supervisor", firstname: "Michael Dinglis"}]    ,
+
 }
 
 // [{id: 20, username: "md", password: 4, role: "supervisor", firstname: "Michael Dinglis"}]

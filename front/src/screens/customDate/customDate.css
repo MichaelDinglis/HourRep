@@ -1,0 +1,19 @@
+.mainDivCustomDate{
+    height: 200vh
+}
+
+.customDateBox {
+    padding-top:20px;
+    width:500px;
+    height:300px;
+    z-index: 15;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(black, .1);
+    box-sizing: border-box;
+    margin: 100px auto 10px;
+    overflow: hidden;
+    justify-content: 'center';
+    align-items: 'center';
+    }
